@@ -1,0 +1,691 @@
+@media only screen and (max-width: 1320px) {
+  #mainPage .mainPageBlock .leftMainPageBlock h2 {
+    padding-right: 0;
+    font-size: 5.12em; }
+  #mainPage .mainPageBlock .leftMainPageBlock p {
+    padding-right: 0; } }
+@media only screen and (max-width: 1225px) {
+  #mainPage .mainPageBlock .leftMainPageBlock h2 {
+    padding-right: 0;
+    font-size: 4.8em; }
+  #mainPage .mainPageBlock .leftMainPageBlock #callToAction {
+    font-size: 2.24em; } }
+@media only screen and (max-width: 1150px) {
+  #mainPage .mainPageBlock {
+    width: 100%; }
+    #mainPage .mainPageBlock .leftMainPageBlock {
+      padding-left: 8.5%;
+      padding-right: 2%; }
+      #mainPage .mainPageBlock .leftMainPageBlock h2 {
+        font-size: 5.12em; }
+
+  #Slider .slider-container .slider-container-right .slider-details button {
+    width: 75%; } }
+@media only screen and (max-width: 1025px) {
+  header .header-wrapper #Tablet-Menu {
+    display: inline-block;
+    margin-left: 40px; }
+  header .header-wrapper ul li {
+    display: none; }
+
+  footer .bottom-menu ul {
+    width: 45%; } }
+@media only screen and (max-width: 1005px) {
+  #mainPage .mainPageBlock .leftMainPageBlock {
+    padding-right: 2%; }
+    #mainPage .mainPageBlock .leftMainPageBlock h2 {
+      font-size: 5.12em; }
+
+ #Slider .slider-container .all-slides .mySlides .slider-details p {
+    display: none; }
+  #Slider .slider-container .all-slides .mySlides .slider-details h3 {
+    margin-bottom: 20px;
+    font-size: 4em; }
+  #Slider .slider-container .all-slides .mySlides .slider-details button {
+    font-size: 1.92em;
+    width: 65%; } }
+@media only screen and (max-width: 930px) {
+  #mainPage .mainPageBlock .leftMainPageBlock {
+    width: 70%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    padding: 6% 8% 6% 8%;
+    border-radius: 65px 65px 65px 65px; }
+    #mainPage .mainPageBlock .leftMainPageBlock #callToAction {
+      font-size: 2.88em;
+      padding: 20px 0px 20px 0px;
+      width: 60%;
+      -ms-grid-row-align: center;
+      -ms-flex-item-align: center;
+      align-self: center; }
+    #mainPage .mainPageBlock .leftMainPageBlock p {
+      padding: 0 20px 0 20px;
+      box-sizing: border-box; }
+    #mainPage .mainPageBlock .leftMainPageBlock h2 {
+      font-size: 5.76em; }
+  #mainPage .mainPageBlock .rightMainPageBlock {
+    display: none; }
+  #About h2 {
+    margin: 8% 0 4% 0; }
+  #About #Logo_serit {
+    padding: 8% 0 12% 0; } 
+  }
+
+
+
+@media only screen and (max-width: 600px) {
+  #mainPage .mainPageBlock .leftMainPageBlock {
+    width: 80%; }
+
+  #Slider .slider-container .slider-container-right .slider-details h3 {
+    font-size: 4.48em; }
+  #Slider .slider-container .slider-container-right .slider-details button {
+    width: 75%; } }
+/* =========================== FOR PHONE 320PX ========*/
+@media only screen and (max-width: 599px) {
+  header .header-wrapper {
+    width: 90%; }
+    header .header-wrapper #Tablet-Menu {
+      display: none; }
+   /* header .header-wrapper #search {
+      display: none; }*/
+    header .header-wrapper #Tablet-Menu-Mobile {
+      display: inline-block;
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1; }
+    header .header-wrapper #logo {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2;
+      right: 0px; }
+   /* header .header-wrapper #search-Mobile {
+      display: inline-block;
+      -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+      order: 3; }*/
+    header .header-wrapper ul {
+      display: none; }
+
+  #mainPage img {
+    width: 100%;
+    height: 460px; }
+  #mainPage #mainPageImage {
+    display: none; }
+  #mainPage #mainPageImagePhone {
+    display: block; }
+  #mainPage .mainPageBlock .leftMainPageBlock {
+    width: 100%;
+    padding: 10% 10% 15% 10%; }
+    #mainPage .mainPageBlock .leftMainPageBlock h2 {
+      font-size: 4.48em;
+      line-height: 1.3em;
+      padding: 0; }
+    #mainPage .mainPageBlock .leftMainPageBlock p {
+      padding: 0; }
+    #mainPage .mainPageBlock .leftMainPageBlock #callToAction {
+      width: 85%;
+      font-size: 2.24em;
+      padding: 20px 0px 20px 0px; }
+
+  #Categories {
+    padding-bottom: 12%; }
+    #Categories h2 {
+      font-size: 5.12em;
+      margin: 100px 0 50px 0;
+      padding: 0 5%; }
+    #Categories .goods {
+      width: 100%; }
+      #Categories .goods .good-item {
+        width: 48%;
+        margin: 0 1% 8% 1%; }
+        #Categories .goods .good-item .outer-category-container {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column; }
+          #Categories .goods .good-item .outer-category-container .category-name {
+            padding: 0em;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            min-height: 63px; }
+            #Categories .goods .good-item .outer-category-container .category-name .sub-menu {
+              top: 100%; }
+            #Categories .goods .good-item .outer-category-container .category-name p {
+              padding: 0.8em 10% 0.8em 10%;
+              margin: 0; }
+
+  #Slider h2 {
+    font-size: 5.12em;
+    padding: 30px 5%;
+    display:none; }
+  #Slider .slider-container-mobile {
+    display: block;
+    width: 100%;
+    background: rgba(208, 208, 208, 0.85); }
+    #Slider .slider-container-mobile .mySlides-mobile {
+      width: 100%; }
+      #Slider .slider-container-mobile .mySlides-mobile h3 {
+        font-style: italic;
+        font-size: 4.48em;
+        line-height: 1.3em;
+        margin: 0;
+        font-weight: 600;
+        text-align: center;
+        padding: 35px 0 10px 0; }
+      #Slider .slider-container-mobile .mySlides-mobile p {
+        font-size: 2.24em;
+        margin: 0;
+        text-align: center;
+        line-height: 1.8em;
+        margin-bottom: 35px; }
+      #Slider .slider-container-mobile .mySlides-mobile .slider-container-left-mobile {
+        width: 90%;
+        padding: 0 5%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background: white;
+        justify-content: center; }
+        #Slider .slider-container-mobile .mySlides-mobile .slider-container-left-mobile .slider-image-mobile {
+          width: 60%;
+          margin: 0 2%; }
+        #Slider .slider-container-mobile .mySlides-mobile .slider-container-left-mobile .arrows {
+          width: 7%; }
+      #Slider .slider-container-mobile .mySlides-mobile .button-container-mobile {
+        width: 75%;
+        margin: auto; }
+        #Slider .slider-container-mobile .mySlides-mobile .button-container-mobile button {
+          font-weight: 600;
+          font-size: 2.24em;
+          letter-spacing: 0.04em;
+          color: white;
+          background: #9B7318;
+          border-radius: 10px;
+          border: none;
+          padding: 15px 0 15px 0;
+          width: 60%;
+          margin: 20px 20% 40px 20%;
+          align-self: center;
+          position:relative; }
+      #Slider .slider-container-mobile .mySlides-mobile .button-container-mobile button:hover {
+        background: #cb9c31;
+      }
+      #Slider .slider-container-mobile .mySlides-mobile .button-container-mobile button a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0%; 
+        display: block;
+      }
+  #Slider .slider-container {
+    display: none; }
+  #Slider .hr-block {
+    width: 100%;
+    height: 10px;
+    background: #424242; }
+  #Slider #top-line {
+   display:block; 
+    height: 15px;
+ }
+
+  #About h2 {
+    font-size: 5.12em;
+    margin: 20% 0 10% 0;
+    padding: 0 5%; }
+  #About .details-container {
+    width: 90%; }
+    #About .details-container .details-item {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 15%; }
+    #About .details-container #Details-left-item, #About .details-container #Details-right-item {
+      margin: 0;
+      margin-bottom: 15%; }
+  #About #Logo_serit {
+    display: none; }
+  #About .logos-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 90%;
+    margin: 5% auto;
+    padding: 5% 0 5% 0; }
+    #About .logos-block img {
+      width: 42%;
+      margin-bottom: 15%;
+      height: 60px; }
+
+  footer hr {
+    display: none; }
+  footer .bottom-menu {
+    display: block; }
+    footer .bottom-menu ul {
+      width: 100%;
+      font-size: 2.24em;
+      margin: 20px 0 30px 0; }
+    footer .bottom-menu .social-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      footer .bottom-menu .social-container a svg {
+        width: 30px; }
+  footer .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.6em; }
+    footer .copyright p {
+      margin: 0; }
+    footer .copyright .phone-number {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      margin-top: 10px; }
+    footer .copyright .copyright-text {
+      margin: 8px 0 30px 0;
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2; } 
+
+     #myLinks {
+    text-align: left;
+    float:left;
+    } 
+
+    }
+@media only screen and (max-width: 300px) {
+  #mainPage .mainPageBlock .leftMainPageBlock {
+    padding: 15% 5% 15% 5%; }
+    #mainPage .mainPageBlock .leftMainPageBlock h2 {
+      font-size: 3.84em;
+      line-height: 1.4em;
+      padding: 0; }
+    #mainPage .mainPageBlock .leftMainPageBlock p {
+      font-size: 1.92em;
+      line-height: 1.8em;
+      margin: 5px 0 30px 0; }
+    #mainPage .mainPageBlock .leftMainPageBlock #callToAction {
+      width: 75%;
+      font-size: 2.24em;
+      padding: 12px 0px 12px 0px; }
+
+  #Categories h2 {
+    font-size: 4.48em;
+    margin: 50px 0 50px 0; }
+
+  #Slider h2 {
+    font-size: 4.48em; }
+
+  #About h2 {
+    font-size: 4.48em; }
+  #About .logos-block {
+    width: 84%; }
+
+  footer .bottom-menu {
+    width: 90%; } }
+@media only screen and (max-width: 250px) {
+  header .header-wrapper #logo {
+    width: 90px; }
+
+  header .header-wrapper #Tablet-Menu-Mobile {
+    width: 30px; }
+
+  #mainPage .mainPageBlock .leftMainPageBlock h2 {
+    font-size: 3.34em; }
+
+  #Categories .goods .good-item .outer-category-container .category-name p {
+    font-size: 0.9em; } }
+@media only screen and (min-width: 379px) and (max-width: 599px) {
+  #About .details-container {
+    width: 84%; }
+  #About .logos-block {
+    width: 84%; }
+
+  footer .bottom-menu {
+    width: 84%; }
+    footer .bottom-menu ul {
+      font-size: 2.56em; }
+  footer .copyright {
+    width: 84%;
+    font-size: 1.92em;
+    padding: 0; } }
+@media only screen and (min-width: 400px) and (max-width: 599px) {
+  #About .details-container {
+    width: 74%; }
+  #About .logos-block {
+    width: 74%; }
+
+  footer .bottom-menu {
+    width: 74%; }
+    footer .bottom-menu ul {
+      margin: 10% 0 5% 0;
+      font-size: 2.56em; }
+    footer .bottom-menu .social-container {
+      margin-top: 30px; }
+  footer .copyright {
+    width: 74%;
+    padding: 0; } }
+@media only screen and (min-width: 420px) and (max-width: 499px) {
+  #mainPage .mainPageBlock .leftMainPageBlock #callToAction {
+    width: 75%; } }
+@media only screen and (min-width: 474px) and (max-width: 599px) {
+  #About {
+    margin-bottom: 0px; }
+    #About .logos-block {
+      margin: 40px auto 0px auto; }
+
+  #About .details-container .details-item p {
+    margin: 0 5% 40px 5%; } }
+@media only screen and (min-width: 499px) and (max-width: 599px) {
+  #About .logos-block img {
+    width: 30%; }
+
+  #Categories .goods .good-item .outer-category-container .category-name p {
+    padding: 0.8em 5% 0.8em 5%; }
+
+  #mainPage .mainPageBlock .leftMainPageBlock #callToAction {
+    width: 70%;
+    font-size: 2.24em;
+    padding: 20px 0px 20px 0px; }
+
+  #About .details-container .details-item {
+    margin-bottom: 10%; }
+  #About .details-container #Details-left-item {
+    margin-bottom: 10%; } }
+@media only screen and (min-width: 499px) and (max-width: 599px) {
+  footer .copyright {
+    font-size: 1.92em; }
+
+  #Categories .goods {
+    width: 74%; }
+    #Categories .goods .good-item {
+      width: 46%;
+      margin: 0 2% 8% 2%; }
+
+  #About .details-container {
+    width: 70%; }
+
+  #About .logos-block {
+    width: 70%; }
+
+  footer .bottom-menu {
+    width: 70%; } }
+@media only screen and (min-width: 499px) and (max-width: 599px) {
+  #mainPage .mainPageBlock .leftMainPageBlock {
+    width: 86%;
+    padding: 10% 8% 10% 8%; }
+
+  header .header-wrapper {
+    width: 86%; }
+
+  #About h2 {
+    margin: 15% 0 10% 0; } }
+
+@media only screen and (max-width: 500px) {
+  #Slider .slider-container-mobile .mySlides-mobile .slider-container-left-mobile .slider-image-mobile {
+      width: 80%;
+  }
+  #Slider .slider-container-mobile .mySlides-mobile .button-container-mobile button {
+    margin: 10% 0%;
+    width: 100%;
+    font-size: 1.8em;
+  }
+}
+/* ========================= TABLET 600 - 768 =============================*/
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  #mainPage .mainPageBlock .leftMainPageBlock {
+    width: 84%; }
+
+  footer .bottom-menu ul {
+    width: 60%; }
+ footer .bottom-menu {
+    padding-top: 12%; }
+    
+  #Categories h2 {
+    margin: 80px 0 55px 0; }
+
+  #Categories .goods .good-item {
+    width: 30%;
+    margin: 0 1.5% 5% 1.5%; }
+    #Categories .goods .good-item .outer-category-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      #Categories .goods .good-item .outer-category-container .category-name {
+        padding: 15px 8px 15px 8px;
+        min-height: 67px;
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        #Categories .goods .good-item .outer-category-container .category-name .sub-menu {
+          top: 100%; }
+        #Categories .goods .good-item .outer-category-container .category-name p {
+          margin: 0; }
+
+            #Slider .slider-container .all-slides .mySlides {
+    flex-direction: column; }
+    #Slider .slider-container .all-slides .mySlides .slider-image {
+      width: 75%;
+      height: 220px; }
+    #Slider .slider-container .all-slides .mySlides .slider-details {
+      width: 75%; }
+      #Slider .slider-container .all-slides .mySlides .slider-details h3 {
+        margin: 35px 0;
+        font-size: 4em; }
+      #Slider .slider-container .all-slides .mySlides .slider-details p {
+        display: none; } 
+
+  #About .details-container {
+    width: 81%; }
+    #About .details-container .details-item {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 40px; }
+      #About .details-container .details-item p {
+        margin: 0 5% 55px 5%; }
+    #About .details-container #Details-left-item {
+      margin: 0;
+      margin-bottom: 40px; }
+    #About .details-container #Details-right-item {
+      margin: 0;
+      margin-bottom: 40px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 835px) {
+  #mainPage .mainPageBlock .leftMainPageBlock {
+    width: 84%;
+    padding: 6% 12% 6% 12%; }
+
+
+  footer .bottom-menu ul {
+    width: 60%; }
+
+  #Categories h2 {
+    margin: 80px 0 55px 0; }
+
+  #Categories .goods .good-item .outer-category-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    #Categories .goods .good-item .outer-category-container .category-name {
+      padding: 15px 8px 15px 8px;
+      min-height: 67px;
+      box-sizing: border-box;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      #Categories .goods .good-item .outer-category-container .category-name p {
+        margin: 0; } }
+/* ==================================== HUGE 1600 PX ==============================*/
+@media only screen and (min-width: 1600px) {
+  header .header-wrapper {
+    width: 74%; }
+
+  #mainPage .mainPageBlock {
+    width: 74%; }
+  #mainPage img {
+    height: 760px; }
+
+  #Categories {
+    width: 74%; }
+    #Categories .goods {
+      width: 100%;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      #Categories .goods .good-item {
+        margin: 0 0% 2% 0%; }
+
+  #Slider .slider-container {
+    padding: 25px 13% 25px 13%;
+    width: 74%; }
+    #Slider .slider-container .slider-container-left {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      #Slider .slider-container .slider-container-left img {
+        padding-right: 0px; }
+
+  #About {
+    width: 74%;
+    max-width: none;
+    margin: 0 auto; }
+    #About .details-container {
+      width: 100%; }
+      #About .details-container #Details-right-item {
+        margin-right: 0;
+        margin-left: 2%; }
+      #About .details-container #Details-left-item {
+        margin-left: 0;
+        margin-right: 2%; }
+    #About #Logo_serit {
+      width: 100%; }
+
+  footer .bottom-menu {
+    width: 74%; }
+  footer .copyright {
+    width: 74%; } }
+/* ==================================== HUGE 1920 PX ==============================*/
+@media only screen and (min-width: 1919px) {
+  header .header-wrapper {
+    width: 68%; }
+    header .header-wrapper ul li {
+      margin-left: 40px;
+      margin-right: 30px; }
+    header .header-wrapper #logo {
+      width: 200px; }
+    /*header .header-wrapper #search {
+      width: 45px; }*/
+
+  #mainPage .mainPageBlock {
+    width: 68%; }
+    #mainPage .mainPageBlock .leftMainPageBlock {
+      padding: 6% 2% 5% 7%; }
+      #mainPage .mainPageBlock .leftMainPageBlock h2 {
+        font-size: 7.28em;
+        padding-right: 0;
+        line-height: 1.2em; }
+      #mainPage .mainPageBlock .leftMainPageBlock p {
+        font-size: 2.88em;
+        line-height: 2.0em; }
+  #mainPage img {
+    height: 860px; }
+
+  #Categories {
+    width: 68%; }
+    #Categories h2 {
+      font-size: 7.28em; }
+    #Categories .goods .good-item .outer-category-container .category-name {
+      font-size: 2.88em; }
+
+  #Slider .slider-container {
+    width: 68%;
+    padding: 45px 16% 45px 16%; }
+    #Slider .slider-container .slider-container-right .slider-details h3 {
+      font-size: 5.76em; }
+    #Slider .slider-container .slider-container-right .slider-details p {
+      font-size: 2.88em;
+      line-height: 2.0em; }
+  #Slider h2 {
+    font-size: 7.28em; }
+
+  #About {
+    width: 68%; }
+    #About h2 {
+      font-size: 7.28em; }
+    #About .details-container .details-item img {
+      height: 75px; }
+    #About .details-container .details-item h3 {
+      font-size: 3.84em;
+      margin-top: 20px; }
+    #About .details-container .details-item p {
+      font-size: 2.88em;
+      line-height: 1.6em; }
+
+  footer .bottom-menu {
+    width: 68%; }
+    footer .bottom-menu ul {
+      font-size: 3.84em;
+      width: 35%; }
+    footer .bottom-menu .social-container a svg {
+      width: 35px; }
+  footer .copyright {
+    width: 68%; }
+   /* footer .copyright .copyright-text, footer .copyright .phone-number {
+      font-size: 1.286em; } }*/
+
+/*# sourceMappingURL=media.css.map */

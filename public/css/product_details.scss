@@ -1,0 +1,178 @@
+.general-container {
+	overflow: auto;
+
+	width:62%;
+
+
+	margin:75px auto 200px auto;
+	
+	.product-container {
+		overflow: auto;
+		width:100%;
+			img {
+				float:left;
+				width:300px;
+				height:250px;
+				margin: 0 30px 30px 0;
+			}
+			.product-description {
+				p {
+					text-align: justify;
+					overflow-wrap: break-word;
+				}
+			}	 
+	}
+
+	.price-container {
+		width:100%;
+		 
+		float:left;
+		.category-container {
+			display:flex;
+			justify-content: space-between;
+
+			a {
+				width: 15%;
+			}
+		}
+
+		hr {
+			margin-top: 0px;	
+		}	
+	}
+
+}
+
+
+#back {
+	background: #2c8c2e;
+	color:white;
+	width:100%;
+	font-size: 1.4rem;
+}
+
+#back:hover {
+	background: #1e5a1f;
+}
+
+
+@media only screen and (max-width: 1100px) {
+ 	.general-container  {
+		width: 84%;	
+	}
+}	
+
+// @media only screen and (max-width: 1000px) {
+//  	.category-container  {
+// 		// flex-direction: column !important;
+// 	}
+
+// 	.general-container .product-container .product-description .category-container a {
+// 		width:45% !important;
+// 	}
+// }	
+
+
+@media only screen and (max-width: 850px) {
+ 	.general-container {
+		.product-container {
+			img {
+				width:200px;
+				height:175px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 650px) {
+ 	.general-container  {
+ 		margin: 50px auto 150px auto;
+		.product-container {
+			img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 50%;
+				float:none;
+			}
+
+			.product-description {
+				p {
+					text-align: center;
+					word-wrap: break-word;
+				}
+			}
+		}
+	
+
+	h1 {
+		text-align: center;
+	}
+
+		.price-container {
+			flex-direction: column !important;
+	 		p {
+	 			text-align: center;
+	 		}
+
+			hr {
+				border:0.3px solid black;
+			}
+			.category-container  {
+				p, a {
+					align-self: center;
+				}
+			 
+				flex-direction:column;
+				a {
+					width:25% !important;
+				}
+			}
+		}
+	}
+}	
+
+
+@media only screen and (max-width: 500px) {
+	 .general-container .product-container .product-description p {
+		font-size: 2.4em;
+	}
+	 .general-container .price-container p, .category-container p {
+		font-size: 2.4em;
+	}
+		
+	.general-container .price-container .category-container a {
+   		width: 100% !important;
+	}
+	
+	h1 {
+    	font-size: 4.2em;
+	}
+
+	.general-container {
+		.product-container {
+			img {
+				width:75%;
+			}
+		}
+	}
+}	
+
+@media only screen and (max-width: 350px) {
+ 	.general-container  {
+		.product-container {
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.general-container .product-container .product-description .category-container {
+    	display:block; 
+	}
+ 
+}
+
+footer hr {
+    border-top: 1px solid white;
+}

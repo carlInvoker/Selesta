@@ -1,0 +1,31 @@
+@font-face {
+	font-family: "Circe-Bold";
+	src: url("../custom_fonts/circle/Circe-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Circe-ExtraBold.ttf";
+	src: url("../custom_fonts/circle/Circe-ExtraBold.ttf");
+}
+
+@font-face {
+	font-family: "Circe-Extra.ttf";
+	src: url("../custom_fonts/circle/Circe-ExtraLight.ttf");
+}
+
+@font-face {
+	font-family: "CirceL";
+	src: url("../custom_fonts/circle/Circe-Light.ttf");
+}
+
+@font-face {
+	font-family: "Circe";
+	src: url("../custom_fonts/circle/Circe-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Circe-Thin";
+	src: url("../custom_fonts/circle/Circe-Thin.ttf");
+}
+
+

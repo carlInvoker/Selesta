@@ -1,0 +1,283 @@
+header .header-wrapper {
+  label {
+     margin-bottom:0px !important;
+  }
+  .modal-btn {
+
+    #search {
+      margin-left: 40px;
+      vertical-align: middle;
+    }
+
+    #search-Mobile {
+      display: none;
+    }
+    svg {
+      cursor:pointer;
+    }
+    svg:hover path {
+      fill:#36a951;
+    }
+  }
+  .modal-content-main,
+  .modal-backdrop-main {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    display: none;
+    overflow: hidden;
+    cursor: pointer;
+    box-sizing:content-box;
+    transition: opacity 0.2s ease-in;
+  }
+  .modal-close {
+    color: #aaa;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding-top: 3px;
+    background: #fff;
+    font-size: 16px;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    &:hover { color: #333; }
+  }
+
+  form .search-buttons {
+    display:flex;
+  }
+
+  form .search-buttons .submit-search {
+   
+    text-align: center;
+    cursor: pointer;
+    align-items:center;
+    display: none;
+    margin-top: 20px;
+    margin-right:30px;
+    width: 96px;
+    background: #25a628;
+    color: white;
+    border:none;
+    border-radius: 2px;
+    box-sizing: content-box;
+    justify-content: center;
+    padding: 8px 0;
+    font-size:14px;  
+   
+    font-family: inherit;
+    &:hover { color: #fff; background: #2fc033; }
+  }
+
+  form .search-buttons .modal-content-btn {
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    width: 80px;
+    background: #a62525;
+    color: white;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    justify-content: center;
+    padding: 8px;
+    box-sizing: content-box;
+   
+    &:hover { color: #fff; background: #e63131; }
+  }
+
+  .found-product-container {
+    display:none;
+  }
+
+  #modal-toggle {
+    display: none;
+    &.active ~ .modal-backdrop-main,
+    &:checked ~ .modal-backdrop-main {
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 9;
+      display: block;
+      opacity: 1;
+      transition: opacity 0.2s ease-in;
+    }
+    &.active ~ .modal-content-main,
+    &:checked ~ .modal-content-main {
+      opacity: 1;
+      background-color: #fff;
+      width:84%;
+      min-height: 80vh;
+      max-height: 100%;
+      overflow: auto;
+      padding: 10px 8%;
+      position: fixed;
+      left:0;
+      top: 6%;
+      border-radius: 4px;
+      z-index: 999;
+      pointer-events: auto;
+      cursor: auto;
+      display: block;
+      line-height: initial;
+
+      form .submit-search {
+        display: flex;
+      }
+      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+      h2 {
+        font-size: 2.4rem;
+        margin:19.190px 0 0 0;
+        font-weight:600 !important;
+      }
+
+      p {
+        font-size:1.8rem !important;
+        margin-top:18px;
+        margin-bottom:18px;
+      }
+      form input {
+        width:calc(100% - 14px);
+        font-size: 1.6rem;
+        padding:5px;
+        box-sizing: content-box;
+        font-family: 'Roboto';
+      }
+
+      .found-product-container {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        margin-top: 100px;
+        .found-product-item {
+          margin-bottom:20px;
+          border: 1px solid #424242;
+          display: flex;
+          width: 45%;
+          padding: 20px;
+
+          .products-description {
+            width: calc(100% - 200px);
+            padding:0 5%;
+            h2, p {
+              font-size: 1.4rem;
+            }
+            a button {
+              background: #2c8c2e !important;
+              color:white !important;
+              font-size: 1.4rem !important;
+              border:none !important;
+              width:90px !important;
+
+              border-radius: 2px !important;
+              padding:5px !important;
+              cursor:pointer !important;
+              &:hover { background: #1e5a1f !important; }
+            }
+          }
+        }
+      }
+    }
+  }
+  .found-product-item  img {
+    width:200px;
+    height:200px;
+  }
+}
+
+  @media only screen and (max-width: 599px) {
+    header .header-wrapper {
+      form .search-buttons {
+        width:100%;
+        justify-content: space-between;
+      }
+      .modal-btn {
+        order: 3;
+        #search {
+          display: none;
+        }
+        #search-Mobile {
+          display: inline-block;
+          -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
+          order: 3;
+        }
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: 1100px) {
+    header .header-wrapper .found-product-item  {
+      .products-description {
+        width: calc(100% - 150px);
+      }
+      
+      img {
+        width:150px !important;
+        height:150px !important;
+      }
+    }
+
+  
+  }
+
+
+  @media only screen and (max-width: 1000px) {
+    header .header-wrapper #modal-toggle:checked ~ .modal-content-main .found-product-container
+    .found-product-item {
+      width:100%;
+    }
+    header .header-wrapper .found-product-item  {
+      .products-description {
+        width: calc(100% - 200px);
+      }
+      
+      img {
+        width:200px !important;
+        height:200px !important;
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: 550px) {
+    header .header-wrapper #modal-toggle:checked ~ .modal-content-main .found-product-container .found-product-item {
+      flex-direction:column;
+      img, button {
+        align-self: center !important;
+      }
+      .products-description {
+        text-align: center;
+        padding:0;
+      }
+    }
+     header .header-wrapper .found-product-item  {
+      .products-description {
+        width: 100% !important;
+      }
+      
+      img {
+        width:175px !important;
+        height:175px !important;
+      }
+    }
+  }
+
+
+
+
+  @media only screen and (min-width: 1919px) {
+    header .header-wrapper .modal-btn {
+      #search {
+        width: 45px;
+      }
+    }
+  }

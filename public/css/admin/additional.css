@@ -1,0 +1,70 @@
+#logo {
+  width: 160px;
+  margin: 10px 0 10px 0;
+ }
+
+ .navbar {
+   background: white !important;
+ }
+
+ .navbar-dark .navbar-nav .nav-link {
+      color:#424242;
+      font-weight: 600;
+      padding:0;
+
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+     color:black;
+     font-weight: 600;
+}
+
+
+ .sidebar-sticky {
+   padding-top: 5.2rem !important;
+   color: white;
+   background: #424242;
+ }
+
+ .sidebar .nav-link {
+     color: #D7D7D7;
+ }
+
+ .sidebar .nav-link:hover {
+     color: white;
+ }
+
+ h2 {
+    padding-top: 5.2rem !important;
+ }
+
+ h3 {
+   color:#424242;
+   margin-right: 60px;
+ }
+
+ .sidebar .nav-link.active {
+    color: #00ff3a;
+ }
+
+ main {
+   background: #ebffec;
+ }
+
+ .table-header {
+   display:flex;
+   margin-bottom:1.2rem;
+   justify-content: space-between;
+ }
+
+ .table-header button {
+   margin-top: 5.4rem !important;
+
+ }
+
+
+ @media only screen and (max-width: 476px) {
+   h2 {
+      padding-top: 12.2rem !important;
+   }
+ }

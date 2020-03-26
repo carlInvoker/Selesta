@@ -380,11 +380,14 @@ header {
       margin: 0 1% 0 1%; }
     #About .details-container #Details-right-item {
       margin: 0 1% 0 1%; }
+    #About .details-container #Details-central-item {
+      margin-bottom:4px; }
+
   #About #Logo_serit {
     width: 84%;
     display: block;
     margin: auto;
-    padding: 5% 0 10% 0;
+    padding: calc(5% - 4px) 0 10% 0;
     background-color: white; }
   #About .logos-block {
     display: none; }

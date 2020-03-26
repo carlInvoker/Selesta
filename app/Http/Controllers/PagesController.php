@@ -24,7 +24,7 @@ class PagesController extends Controller
      */
     public function index()
     {
-        $sliders = Slider::latest()->get();
+        $sliders = Slider::latest()->where('sliders_status',  1)->get();
         return view('selestaMain')->with('sliders', $sliders);
     }
 

@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="{{ asset('css/stylesMain.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/modal.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/mediaMain.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/aos-master/dist/aos.css') }}" />
 
 	<script src="{{ url('js/axios/axios.min.js') }}"></script>
 	<script type="text/javascript">
@@ -153,7 +154,7 @@
 
 		<div class="goods">
 
-			<div class="good-item">
+			<div class="good-item" data-aos="fade-right" style="z-index: 1000">
 				<img src="{{ asset('pictures/FOR_CATEGORIES_MAIN/hair-care_edited.png') }}" alt="hair-care">
 			 	<div class="outer-category-container">
 					<div class="category-name">
@@ -167,7 +168,7 @@
 				</div>
 			</div>
 
-			<div class="good-item">
+			<div class="good-item"  data-aos="fade-right" style="z-index: 999">
 				<img src="{{ asset('pictures/FOR_CATEGORIES_MAIN/soap_edited.png') }}" alt="soap">
 				<div class="outer-category-container">
 					<div class="category-name">
@@ -183,7 +184,7 @@
 				</div>
 			</div>
 
-			<div class="good-item">
+			<div class="good-item" data-aos="fade-left" style="z-index: 998">
 				<img src="{{ asset('pictures/FOR_CATEGORIES_MAIN/creams_edited.png') }}" alt="creams">
 				<div class="outer-category-container">
 					<div class="category-name">
@@ -197,7 +198,7 @@
 				</div>
 			</div>
 
-			<div class="good-item">
+			<div class="good-item" data-aos="fade-left" style="z-index: 997">
 				<img src="{{ asset('pictures/FOR_CATEGORIES_MAIN/for_face_edited.png') }}" alt="for_face">
 				<div class="outer-category-container">
 					<div class="category-name">
@@ -206,7 +207,7 @@
 				</div>
 			</div>
 
-			<div class="good-item">
+			<div class="good-item"  data-aos="fade-right" style="z-index: 996">
 				<img src="{{ asset('pictures/FOR_CATEGORIES_MAIN/anti-age_edited.png') }}" alt="anti-age">
 				<div class="outer-category-container">
 					<div class="category-name">
@@ -215,7 +216,7 @@
 				</div>
 			</div>
 
-				<div class="good-item">
+				<div class="good-item" data-aos="fade-right" style="z-index: 995">
 				<img src="{{ asset('pictures/FOR_CATEGORIES_MAIN/collection_edited.png') }}" alt="collections">
 				<div class="outer-category-container">
 					<div class="category-name">
@@ -224,7 +225,7 @@
 				</div>
 			</div>
 
-			<div class="good-item">
+			<div class="good-item" data-aos="fade-left" style="z-index: 994">
 				<img src="{{ asset('pictures/FOR_CATEGORIES_MAIN/anticelulite_edited.png') }}" alt="anticelulite">
 				<div class="outer-category-container">
 					<div class="category-name">
@@ -233,7 +234,7 @@
 				</div>
 			</div>
 
-			<div class="good-item">
+			<div class="good-item" data-aos="fade-left" style="z-index: 993">
 				<img src="{{ asset('pictures/FOR_CATEGORIES_MAIN/anti-sun_edited.png') }}" alt="anti-sun">
 				<div class="outer-category-container">
 					<div class="category-name">
@@ -301,9 +302,9 @@
 	</section>
 
 	<section id="About">
-		<h2>Selesta Life Ukraine</h2>
+		<h2 data-aos="fade-left">Selesta Life Ukraine</h2>
 
-		<div class="details-container">
+		<div class="details-container" data-aos="fade-right">
 
 			<div class="details-item" id="Details-left-item">
 				<img src="{{ asset('pictures/SVG/Ingridients.svg') }}" alt="Ingridients">
@@ -313,7 +314,7 @@
 				</p>
 			</div>
 
-			<div class="details-item">
+			<div class="details-item" id="Details-central-item">
 				<img src="{{ asset('pictures/SVG/no-allergens.svg') }}" alt="no-allergens">
 				<h3>БЕЗ АЛЕРГЕНІВ</h3>
 				<p>
@@ -333,9 +334,9 @@
 
 		</div>
 
-		<img src="{{ asset('pictures/logo_serit.jpg') }}" alt="logos" id="Logo_serit">
+		<img src="{{ asset('pictures/logo_serit.jpg') }}" alt="logos" id="Logo_serit" data-aos="fade-right">
 
-		<div class="logos-block">
+		<div class="logos-block" data-aos="fade-right">
 			<img src="{{ asset('pictures/phone/Logos/Selesta1.png') }}" alt="Logo1">
 
 			<img src="{{ asset('pictures/phone/Logos/Selesta2.png') }}" alt="Logo2">
@@ -460,9 +461,13 @@
 		  x[slideIndexMobile-1].style.display = "block";
 		  timerMobile = window.setTimeout(carouselMobile, 7000);
 		}
-
-
 	</script>
 
+	<script src="{{ asset('css/aos-master/dist/aos.js') }}"></script>
+	<script>
+	  AOS.init({
+	  	duration: 1200,
+	  });
+	</script>
 </body>
 </html>

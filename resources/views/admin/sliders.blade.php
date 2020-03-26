@@ -33,6 +33,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
 <script src="{{ url('js/axios/axios.min.js') }}"></script>
+<script src="{{ url('js/ellipsis.js') }}"></script>
 <!-- <script src="{{ url('js/axios/require.js') }}"></script> -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
 
@@ -50,7 +51,11 @@
              {data: 'sliders_image', name: 'sliders_image', orderable: false, searchable: false},
              {data: 'edit', name: 'edit', orderable: false, searchable: false},
              {data: 'status', name: 'status', orderable: false, searchable: false},
-         ]
+         ],
+         columnDefs: [ {
+             targets: 1,
+             render: $.fn.dataTable.render.ellipsis(255)
+         }]
      });
     });
 </script>

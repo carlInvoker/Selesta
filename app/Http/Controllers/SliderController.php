@@ -31,7 +31,7 @@ class SliderController extends Controller
      public function getSlides(Request $request)  //   1
      {
         if ($request->ajax()) {
-            $sliders = Slider::latest()->get();
+            $sliders = Slider::latest()->orderBy('sliders_status')->get();
             return Datatables::of($sliders)
                 ->addIndexColumn()
                 // ->addColumn('sliders_header', function($sliders){

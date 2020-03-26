@@ -50,7 +50,7 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
-        // return parent::render($request, $exception);
-        return "<h1>OOPS, SOMETHING WENT WRONG !!!</h1>"; 
+        return parent::render($request, $exception);
+        // return "<h1>OOPS, SOMETHING WENT WRONG !!!</h1>";
     }
 }

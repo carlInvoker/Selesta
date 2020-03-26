@@ -76,9 +76,7 @@ class ProductsController extends Controller
         }
         return view('admin.products', ['selected' => 2]);
       }
-
-
-
+ 
       public function showDetails($id)
       {
           $product = Product::find($id);
@@ -187,7 +185,7 @@ class ProductsController extends Controller
             $product->product_status = $request->product_status;
             $product->product_category = $request->product_category;
             $product->save();
-            return redirect('admin/products', ['selected' => 2]);
+            return redirect('admin/products')->with('selected', 2);
       }
 
       public function  changeStatus($id)

@@ -12,7 +12,7 @@ class Product  extends Model
          * @var array
          */
         protected $fillable = [
-            'product_name', 'product_description', 'product_price', 'product_image', 'product_status', 'product_category', 'created_at', 'updated_at'
+            'product_name', 'product_description', 'product_price', 'product_image', 'product_status', 'product_category', 'title', 'metaDescription', 'metaKeywords', 'created_at', 'updated_at'
         ];
 
         protected $primaryKey = 'product_id';

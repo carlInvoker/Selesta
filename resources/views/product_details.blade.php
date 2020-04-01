@@ -1,4 +1,4 @@
-@extends('layouts.contact-about')
+@extends('layouts.contact-about', ['title' => 'Назва продукту', 'metaDesciption' => $product->metaDescription, 'metaKeywords' => $product->metaKeywords])
 
 @section('content')
 
@@ -7,13 +7,13 @@
 
 	<div class="general-container">
 		<div class="product-container">
-		 	
+
 			    <img src="{{ url('/images/products/'.$product->product_image) }}" alt="image" onerror="altImage(this)">
 				<div class="product-description">
 					<h1>{{ $product->product_name }}</h1>
-					<p>{!! $product->product_description !!}</p>			
+					<p>{!! $product->product_description !!}</p>
 				</div>
-			 
+
 		</div>
 
 		<div class="price-container">
@@ -26,7 +26,7 @@
 	</div>
 	</div>
 
-	
+
 
   <script>
   function altImage(obj) {

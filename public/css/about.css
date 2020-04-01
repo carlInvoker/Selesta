@@ -6,8 +6,10 @@
     padding: 25px 40px; }
   .about-container .about-header {
     background-color: #9FF1A2;
+    display: -ms-flexbox;
     display: flex;
-    align-content: center; }
+    -ms-flex-line-pack: center;
+        align-content: center; }
     .about-container .about-header h1 {
       font-size: 3.6rem;
       color: black;
@@ -52,5 +54,3 @@
 @media only screen and (min-width: 1600px) {
   .about-container {
     margin-bottom: 200px; } }
-
-/*# sourceMappingURL=about.css.map */

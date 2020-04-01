@@ -21,8 +21,18 @@
     <link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" rel="stylesheet">
     <style>
 
+      #DataTables_Table_0_filterWrapper {
+        margin-bottom:10px;
+      }
 
+      #DataTables_Table_0_filterSelect3 {
+        margin-left: 5px;
+        max-width: none !important;
+      }
 
+      .select2-container .select2-selection--single {
+          height:34px !important;
+      }
 
     </style>
 

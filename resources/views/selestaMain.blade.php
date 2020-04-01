@@ -3,7 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Selesta</title>
+	<meta name="description" content="Сучасна натуральна косметика на основі оливкової олії для догляду за обличчям, руками, тілом та волоссям - SELESTA.">
+	<meta name="keywords" content="Косметика,догляд за волоссям,тілом,руками,Selesta">
+	<title>Головна - Selesta</title>
 
 
 	<link rel="stylesheet" href="{{ asset('css/stylesMain.css') }}">
@@ -280,9 +282,9 @@
 				@foreach ($sliders as $slider)
 			<div class="mySlides-mobile animate-fading">
 				<h3>{{ $slider->sliders_header }}</h3>
-				 
+
 					{!! $slider->sliders_description !!}
-				 
+
 
 				<div class="slider-container-left-mobile">
 					<img src="{{ asset('pictures/left-arrow.svg') }}" alt="left-arrow" class="arrows" onclick="plusDivsMobile(-1)">

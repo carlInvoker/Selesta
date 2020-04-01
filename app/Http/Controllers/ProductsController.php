@@ -51,7 +51,7 @@ class ProductsController extends Controller
      public function getProducts(Request $request)
      {
         if ($request->ajax()) {
-            $products = Product::latest()->get();
+            $products = Product::orderBy('product_status', 'desc')->get();
             return Datatables::of($products)
                 ->addIndexColumn()
                 ->addColumn('product_description', function($products){
@@ -76,7 +76,7 @@ class ProductsController extends Controller
         }
         return view('admin.products', ['selected' => 2]);
       }
- 
+
       public function showDetails($id)
       {
           $product = Product::find($id);
@@ -161,6 +161,9 @@ class ProductsController extends Controller
             'product_price ' => 'numeric',
             'product_image ' => 'image|mimes:jpeg,png,jpg,svg|max:2048',
             'product_status ' => 'integer|max:1|min:0',
+            'title' => 'required|string|max:128',
+            'metaDescription' => 'required|string|max:160',
+            'metaKeywords' => 'required|string|max:160',
             '_token' => 'required',
           ]);
 
@@ -184,6 +187,9 @@ class ProductsController extends Controller
 
             $product->product_status = $request->product_status;
             $product->product_category = $request->product_category;
+            $product->title = $request->title;
+            $product->metaDescription = $request->metaDescription;
+            $product->metaKeywords = $request->metaKeywords;
             $product->save();
             return redirect('admin/products')->with('selected', 2);
       }

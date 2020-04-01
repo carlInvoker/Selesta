@@ -1,10 +1,10 @@
-@extends('layouts.contact-about')
+@extends('layouts.contact-about', ['title' => 'Про нас'])
 
 @section('content')
 <link href="{{ asset('css/about.css') }}" rel="stylesheet" >
- 
+
         <div class="about-container">
-           
+
                 <div class="about-header"><h1>  Про "Selesta Life Ukraine" </h1></div>
 
                 <div class="about-body">
@@ -43,7 +43,7 @@
 										</p>
                 </div>
             </div>
-       
+
     </div>
 
 @endsection

@@ -67,7 +67,7 @@ class SliderController extends Controller
      public function addSlideForm()  //    2
      {
          $products = Product::all();
-         return view('admin.add_slide')->with('products', $products);
+         return view('admin.add_slide', ['products' => $products, 'selected' => 3]);
      }
 
      public function  editSlideForm($id)   //    3/4

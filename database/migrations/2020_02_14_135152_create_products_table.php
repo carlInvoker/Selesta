@@ -19,10 +19,15 @@ class CreateProductsTable extends Migration
             $table->text('product_description');
             $table->double('product_price', 8, 2)->nullable();
             $table->string('product_image', 1024)->nullable();
+            $table->integer('product_status',2)->default(1);
+            $table->string('product_category', 255)->nullable();
+            $table->string('title', 128);
+            $table->string('metaDescription', 160);
+            $table->string('metaKeywords', 160);
             $table->timestamps();
         });
     }
-
+  $table->integer('sliders_status',2)->default(1);
     /**
      * Reverse the migrations.
      *

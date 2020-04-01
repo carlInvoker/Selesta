@@ -19,13 +19,10 @@ a {
 header {
   width: 100%; }
   header .header-wrapper {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     width: 84%;
@@ -54,10 +51,8 @@ header {
     header .header-wrapper  ul {
       list-style-type: none;
       font-size: 1.8rem;
-      display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
       header .header-wrapper  ul li  {
@@ -118,14 +113,11 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 2;
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 84%;
@@ -181,7 +173,6 @@ header {
     margin: 100px 0 65px 0;
     text-align: center; }
   #Categories .goods {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -197,11 +188,8 @@ header {
       #Categories .goods .good-item img {
         width: 100%; }
       #Categories .goods .good-item .outer-category-container {
-        display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column; }
         #Categories .goods .good-item .outer-category-container .category-name {
@@ -228,7 +216,8 @@ header {
           margin: 0;
           width: 100%;
           z-index: 3;
-          transform-origin: top;
+          -ms-transform-origin: top;
+              transform-origin: top;
           transform: rotateX(-90deg);
           transition: transform 0.3s linear;
           background-color: #f4d03f; }
@@ -248,9 +237,12 @@ header {
 
 #Categories .goods .good-item .outer-category-container .category-name .sub-menu li a {
   font-size: 1.4rem;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
   color: black;
   text-decoration: none;
   height: 100%;
@@ -278,9 +270,12 @@ header {
   #Slider .slider-container {
     width: 90%;
     margin: 20px auto;
+    display: -ms-flexbox;
     display: flex; }
     #Slider .slider-container .desktop-arrow, #Slider .slider-container .all-slides .mySlides .slider-details, #Slider .slider-container .all-slides .mySlides .slider-image {
-      align-self: center; 
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center; 
       max-height:400px;
     }
     #Slider .slider-container .desktop-arrow {
@@ -396,13 +391,10 @@ footer {
   background: #424242;
   color: white; }
   footer .bottom-menu {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     width: 84%;
@@ -412,11 +404,9 @@ footer {
     footer .bottom-menu ul {
       list-style-type: none;
       font-size: 1.8rem;
-      display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       width: 30%;
-      -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
       font-weight: 600;
@@ -437,10 +427,8 @@ footer {
     width: 84%;
     /* max-width: 1286px;*/
     margin: 0 auto;
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
 
@@ -452,14 +440,16 @@ footer {
 
 
 .animate-fading {
-  animation:fading 8s infinite
+  -webkit-animation:fading 8s infinite;
+          animation:fading 8s infinite
+}
+@-webkit-keyframes fading{
+  0%{ opacity:0 }
+  50%{ opacity:1 }
+  100%{ opacity:0 }
 }
 @keyframes fading{
   0%{ opacity:0 }
   50%{ opacity:1 }
   100%{ opacity:0 }
 }
-
-
-
-/*# sourceMappingURL=styles.css.map */

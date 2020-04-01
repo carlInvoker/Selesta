@@ -88,6 +88,21 @@
     </select>
   </div>
 
+  <div class="form-group">
+    <label for="title">Заголовок сторінки (максимум 128 символів)</label>
+    <input type="text" class="form-control" id="title" aria-describedby="title" placeholder="Заголовок" name="title" value="{{ $product->title ?? ''}}">
+  </div>
+  <div class="form-group">
+    <label for="metaDescription">Опис продукту (максимум 160 символів)</label>
+    <textarea rows="5" cols="45"  class="form-control"  name="metaDescription"> {{ $product->metaDescription ?? ''}} </textarea>
+  </div>
+  <div class="form-group">
+    <label for="metaKeywords">Ключові слова (максимум 160 символів, ключові слова через кому)</label>
+    <input type="text" class="form-control" id="metaKeywords" aria-describedby="metaKeywords" placeholder="Ключове слово 1,Ключове слово 2..." name="metaKeywords" value="{{ $product->metaKeywords ?? ''}}">
+  </div>
+
+
+
   <input type="hidden" name="_token" value="{{ csrf_token() }}">
   @if($product ?? '')
       <input type="hidden" name="product_id" value="{{ $product->product_id }}">

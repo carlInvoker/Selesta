@@ -10,12 +10,12 @@
   <table class="data-table table table-hover ">
     <thead>
       <tr>
-        <th>sliders_header</th>
-        <th>sliders_description</th>
-        <th>sliders_product_name</th>
-        <th>sliders_image</th>
-        <th>edit</th>
-        <th>status</th>
+        <th>Заголовок</th>
+        <th>Опис</th>
+        <th>Назва продукту</th>
+        <th>Зображення слайда</th>
+        <th>Редагувати</th>
+        <th>Статус</th>
       </tr>
     </thead>
     <tbody>

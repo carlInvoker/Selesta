@@ -1,4 +1,4 @@
-@extends('layouts.contact-about')
+@extends('layouts.contact-about', ['title' => 'Продукція'])
 
 @section('content')
 
@@ -10,7 +10,7 @@
 
 
 			<nav id="navigationMain">
-				<form onsubmit="search(this, event)" id="submit_formMain">
+				<form onsubmit="searchPage(this, event)" id="submit_formMain">
 					<div class="form-group">
 					    <label for="product_name">Назва продукту</label>
 					    <input type="text" class="form-control"  placeholder="Назва" name="product_name" value="">
@@ -131,7 +131,7 @@
 
 	<script type="text/javascript">
 
-		function search(form, e) {
+		function searchPage(form, e) {
 				e.preventDefault();
 				const formData = new FormData(form);
 				const data = {};

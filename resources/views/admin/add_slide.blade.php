@@ -12,6 +12,10 @@
         </ul>
     </div>
 @endif
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="{{ asset('js/select2.full.min.js') }}"></script>
+
+<link rel="stylesheet" href="{{ asset('css/select2/select2.min.css') }}">
 
   <form method="POST" action='/admin/addSlide' role="form" enctype="multipart/form-data">
 
@@ -65,7 +69,7 @@
 
   <div class="form-group">
     <label for="product_id">Назва продукту</label>
-    <select class="form-control" name="product_id" id="product_id" >
+    <select class="form-control select2" name="product_id" id="product_id"  >
         @if($products ?? '')
           @if($slider ?? '')
             @foreach ($products as $product)
@@ -97,5 +101,8 @@
     CKEDITOR.replace( 'summary-ckeditor' );
 </script>
 
+<script>
+    $('.select2').select2();
+</script>
 
 @endsection

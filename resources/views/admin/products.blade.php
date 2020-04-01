@@ -10,13 +10,13 @@
   <table class="data-table table table-hover ">
     <thead>
       <tr>
-        <th>product_name</th>
-        <th>product_description</th>
-        <th>product_price</th>
-        <th>product_category</th>
-        <th>product_image</th>
-        <th>edit</th>
-        <th>status</th>
+        <th>Назва продукту</th>
+        <th>Опис</th>
+        <th>Ціна</th>
+        <th>Категорія</th>
+        <th>Зображення</th>
+        <th>Редагувати</th>
+        <th>Статус</th>
       </tr>
     </thead>
     <tbody>
@@ -28,12 +28,13 @@
 
 @push('changeStatus')
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
 <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
 <script src="{{ url('js/axios/axios.min.js') }}"></script>
+<script src="{{ url('js/filterDropDown.min.js') }}"></script>
 <script src="{{ url('js/ellipsis.js') }}"></script>
 <!-- <script src="{{ url('js/axios/require.js') }}"></script> -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
@@ -49,15 +50,26 @@
              {data: 'product_name', name: 'product_name'},
              {data: 'product_description', name: 'product_description', orderable: false, searchable: false},
              {data: 'product_price', name: 'product_price'},
-             {data: 'product_category', name: 'product_category'},
+             {data: 'product_category', name: 'product_category', orderable: true, searchable: true},
              {data: 'product_image', name: 'product_image', orderable: false, searchable: false},
              {data: 'edit', name: 'edit', orderable: false, searchable: false},
              {data: 'status', name: 'status', orderable: false, searchable: false},
          ],
+         order: [ [6, 'desc'] ],
          columnDefs: [ {
              targets: 1,
              render: $.fn.dataTable.render.ellipsis(255)
-         }]
+         }],
+         filterDropDown: {
+					columns: [
+            {
+  						idx: 3,
+              title: "Всі",
+            }
+					],
+          bootstrap: true,
+          label: "Категорія",
+				}
      });
     });
 </script>

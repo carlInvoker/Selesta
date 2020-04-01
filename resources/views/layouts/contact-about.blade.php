@@ -4,7 +4,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Selesta</title>
+	@isset($metaDesciption)
+		<meta name="description" content="{{ $metaDesciption }}">
+	@endisset
+	@isset($metaKeywords)
+		<meta name="keywords" content="{{ $metaKeywords }}">
+	@endisset
+	<title>
+		Selesta -
+		@isset($title)
+			{{ $title }}
+		@endisset
+	</title>
+
 	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 	<link rel="stylesheet" href="{{ asset('css/stylesMain.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/modal.css') }}">

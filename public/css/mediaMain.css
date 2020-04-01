@@ -48,14 +48,10 @@
   #mainPage .mainPageBlock .leftMainPageBlock {
     width: 70%;
     margin: auto;
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
@@ -101,11 +97,9 @@
       display: none; }*/
     header .header-wrapper #Tablet-Menu-Mobile {
       display: inline-block;
-      -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
       order: 1; }
     header .header-wrapper #logo {
-      -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
       order: 2;
       right: 0px; }
@@ -150,22 +144,16 @@
         width: 48%;
         margin: 0 1% 8% 1%; }
         #Categories .goods .good-item .outer-category-container {
-          display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
           -ms-flex-direction: column;
           flex-direction: column; }
           #Categories .goods .good-item .outer-category-container .category-name {
             padding: 0em;
-            display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
-            -webkit-box-pack: center;
             -ms-flex-pack: center;
             justify-content: center;
             min-height: 63px; }
@@ -202,11 +190,11 @@
       #Slider .slider-container-mobile .mySlides-mobile .slider-container-left-mobile {
         width: 90%;
         padding: 0 5%;
-        display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         background: white;
-        justify-content: center; }
+        -ms-flex-pack: center;
+            justify-content: center; }
         #Slider .slider-container-mobile .mySlides-mobile .slider-container-left-mobile .slider-image-mobile {
           width: 60%;
           margin: 0 2%; }
@@ -226,7 +214,9 @@
           padding: 15px 0 15px 0;
           width: 60%;
           margin: 20px 20% 40px 20%;
-          align-self: center;
+          -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+              align-self: center;
           position:relative; }
       #Slider .slider-container-mobile .mySlides-mobile .button-container-mobile button:hover {
         background: #cb9c31;
@@ -265,12 +255,10 @@
   #About #Logo_serit {
     display: none; }
   #About .logos-block {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 90%;
@@ -290,20 +278,15 @@
       font-size: 2.24em;
       margin: 20px 0 30px 0; }
     footer .bottom-menu .social-container {
-      display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; }
       footer .bottom-menu .social-container a svg {
         width: 30px; }
   footer .copyright {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
@@ -311,13 +294,11 @@
     footer .copyright p {
       margin: 0; }
     footer .copyright .phone-number {
-      -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
       order: 1;
       margin-top: 10px; }
     footer .copyright .copyright-text {
       margin: 8px 0 30px 0;
-      -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
       order: 2; } 
 
@@ -482,24 +463,18 @@
     width: 30%;
     margin: 0 1.5% 5% 1.5%; }
     #Categories .goods .good-item .outer-category-container {
-      display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; }
       #Categories .goods .good-item .outer-category-container .category-name {
         padding: 15px 8px 15px 8px;
         min-height: 67px;
         box-sizing: border-box;
-        display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center; }
         #Categories .goods .good-item .outer-category-container .category-name .sub-menu {
@@ -508,7 +483,8 @@
           margin: 0; }
 
             #Slider .slider-container .all-slides .mySlides {
-    flex-direction: column; }
+    -ms-flex-direction: column;
+        flex-direction: column; }
     #Slider .slider-container .all-slides .mySlides .slider-image {
       width: 75%;
       height: 220px; }
@@ -548,24 +524,18 @@
     margin: 80px 0 55px 0; }
 
   #Categories .goods .good-item .outer-category-container {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
     #Categories .goods .good-item .outer-category-container .category-name {
       padding: 15px 8px 15px 8px;
       min-height: 67px;
       box-sizing: border-box;
-      display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
       #Categories .goods .good-item .outer-category-container .category-name p {
@@ -584,7 +554,6 @@
     width: 74%; }
     #Categories .goods {
       width: 100%;
-      -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; }
       #Categories .goods .good-item {
@@ -594,7 +563,6 @@
     padding: 25px 13% 25px 13%;
     width: 74%; }
     #Slider .slider-container .slider-container-left {
-      -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; }
       #Slider .slider-container .slider-container-left img {
@@ -689,3 +657,4 @@
       font-size: 1.286em; } }*/
 
 /*# sourceMappingURL=media.css.map */
+}

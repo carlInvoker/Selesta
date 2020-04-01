@@ -35,11 +35,13 @@ header .header-wrapper .modal-close {
   header .header-wrapper .modal-close:hover {
     color: #333; }
 header .header-wrapper form .search-buttons {
+  display: -ms-flexbox;
   display: flex; }
 header .header-wrapper form .search-buttons .submit-search {
   text-align: center;
   cursor: pointer;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   display: none;
   margin-top: 20px;
   margin-right: 30px;
@@ -49,7 +51,8 @@ header .header-wrapper form .search-buttons .submit-search {
   border: none;
   border-radius: 2px;
   box-sizing: content-box;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   padding: 8px 0;
   font-size: 14px;
   font-family: inherit; }
@@ -57,9 +60,11 @@ header .header-wrapper form .search-buttons .submit-search {
     color: #fff;
     background: #2fc033; }
 header .header-wrapper form .search-buttons .modal-content-btn {
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   cursor: pointer;
   text-align: center;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
   width: 80px;
@@ -67,7 +72,8 @@ header .header-wrapper form .search-buttons .modal-content-btn {
   color: white;
   border-radius: 2px;
   font-size: 1.4rem;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   padding: 8px;
   box-sizing: content-box; }
   header .header-wrapper form .search-buttons .modal-content-btn:hover {
@@ -107,6 +113,7 @@ header .header-wrapper #modal-toggle {
     line-height: initial;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6); }
     header .header-wrapper #modal-toggle.active ~ .modal-content-main form .submit-search, header .header-wrapper #modal-toggle:checked ~ .modal-content-main form .submit-search {
+      display: -ms-flexbox;
       display: flex; }
     header .header-wrapper #modal-toggle.active ~ .modal-content-main h2, header .header-wrapper #modal-toggle:checked ~ .modal-content-main h2 {
       font-size: 2.4rem;
@@ -123,13 +130,17 @@ header .header-wrapper #modal-toggle {
       box-sizing: content-box;
       font-family: 'Roboto'; }
     header .header-wrapper #modal-toggle.active ~ .modal-content-main .found-product-container, header .header-wrapper #modal-toggle:checked ~ .modal-content-main .found-product-container {
+      display: -ms-flexbox;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
       margin-top: 100px; }
       header .header-wrapper #modal-toggle.active ~ .modal-content-main .found-product-container .found-product-item, header .header-wrapper #modal-toggle:checked ~ .modal-content-main .found-product-container .found-product-item {
         margin-bottom: 20px;
         border: 1px solid #424242;
+        display: -ms-flexbox;
         display: flex;
         width: 45%;
         padding: 20px; }
@@ -156,14 +167,15 @@ header .header-wrapper .found-product-item img {
 @media only screen and (max-width: 599px) {
   header .header-wrapper form .search-buttons {
     width: 100%;
-    justify-content: space-between; }
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
   header .header-wrapper .modal-btn {
-    order: 3; }
+    -ms-flex-order: 3;
+        order: 3; }
     header .header-wrapper .modal-btn #search {
       display: none; }
     header .header-wrapper .modal-btn #search-Mobile {
       display: inline-block;
-      -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
       order: 3; } }
 @media only screen and (max-width: 1100px) {
@@ -184,9 +196,12 @@ header .header-wrapper .found-product-item img {
     height: 200px !important; } }
 @media only screen and (max-width: 550px) {
   header .header-wrapper #modal-toggle:checked ~ .modal-content-main .found-product-container .found-product-item {
-    flex-direction: column; }
+    -ms-flex-direction: column;
+        flex-direction: column; }
     header .header-wrapper #modal-toggle:checked ~ .modal-content-main .found-product-container .found-product-item img, header .header-wrapper #modal-toggle:checked ~ .modal-content-main .found-product-container .found-product-item button {
-      align-self: center !important; }
+      -ms-flex-item-align: center !important;
+          -ms-grid-row-align: center !important;
+          align-self: center !important; }
     header .header-wrapper #modal-toggle:checked ~ .modal-content-main .found-product-container .found-product-item .products-description {
       text-align: center;
       padding: 0; }
@@ -199,5 +214,3 @@ header .header-wrapper .found-product-item img {
 @media only screen and (min-width: 1919px) {
   header .header-wrapper .modal-btn #search {
     width: 45px; } }
-
-/*# sourceMappingURL=modal.css.map */

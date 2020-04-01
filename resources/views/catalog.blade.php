@@ -1,4 +1,4 @@
-@extends('layouts.contact-about')
+@extends('layouts.contact-about', ['title' => 'Каталог'])
 
 @section('content')
 
@@ -52,7 +52,7 @@
 				</ul>
 			</div>
 
-			 
+
 
 		</div>
 

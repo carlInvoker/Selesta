@@ -69,12 +69,12 @@
 
   <div class="form-group">
     <label for="product_category">Категорія</label>
-    <select class="form-control" name="product_category" id="product_category" >
+    <select class="form-control" name="product_category[]" id="product_category" multiple size="10" >
         @if($product ?? '')
           @foreach ($categories as $key => $value)
             <optgroup label="{{ $key }}">
               @foreach ($value as $category)
-                  <option value="{{ $category }}" @if ($product->product_category == $category) {!! 'selected="selected"' !!} @endif >{{ $category }}</option>
+                  <option value="{{ $category }}" @if ( strpos($product->product_category, $category) !== false) {!! 'selected="selected"' !!} @endif >{{ $category }}</option>
               @endforeach
           @endforeach
         @else

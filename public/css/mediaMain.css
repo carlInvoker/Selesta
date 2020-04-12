@@ -74,7 +74,7 @@
   #About h2 {
     margin: 8% 0 4% 0; }
   #About #Logo_serit {
-    padding: 8% 0 12% 0; } 
+    padding: 8% 0 12% 0; }
   }
 
 
@@ -225,7 +225,7 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        top: 0%; 
+        top: 0%;
         display: block;
       }
   #Slider .slider-container {
@@ -235,7 +235,7 @@
     height: 10px;
     background: #424242; }
   #Slider #top-line {
-   display:block; 
+   display:block;
     height: 15px;
  }
 
@@ -276,7 +276,7 @@
     footer .bottom-menu ul {
       width: 100%;
       font-size: 2.24em;
-      margin: 20px 0 30px 0; }
+      margin: 20px 0 30px 0 !important; }
     footer .bottom-menu .social-container {
       display: -ms-flexbox;
       display: flex;
@@ -300,12 +300,12 @@
     footer .copyright .copyright-text {
       margin: 8px 0 30px 0;
       -ms-flex-order: 2;
-      order: 2; } 
+      order: 2; }
 
      #myLinks {
     text-align: left;
     float:left;
-    } 
+    }
 
     }
 @media only screen and (max-width: 300px) {
@@ -455,7 +455,7 @@
     width: 60%; }
  footer .bottom-menu {
     padding-top: 12%; }
-    
+
   #Categories h2 {
     margin: 80px 0 55px 0; }
 
@@ -494,7 +494,7 @@
         margin: 35px 0;
         font-size: 4em; }
       #Slider .slider-container .all-slides .mySlides .slider-details p {
-        display: none; } 
+        display: none; }
 
   #About .details-container {
     width: 81%; }

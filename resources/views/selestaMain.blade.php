@@ -7,11 +7,11 @@
 	<meta name="keywords" content="Косметика,догляд за волоссям,тілом,руками,Selesta">
 	<title>Головна - Selesta</title>
 
-
+	<link rel="stylesheet" href="{{ asset('css/aos-master/dist/aos.css') }}" />
 	<link rel="stylesheet" href="{{ asset('css/stylesMain.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/modal.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/mediaMain.css') }}">
-	<link rel="stylesheet" href="{{ asset('css/aos-master/dist/aos.css') }}" />
+	<link rel="icon" type="image/ico" href="{{ asset('pictures/phone/Logos/Selesta1.png') }}">
 
 	<script src="{{ url('js/axios/axios.min.js') }}"></script>
 	<script type="text/javascript">
@@ -62,7 +62,7 @@
 
 
 </head>
-<body>
+<body style="overflow-x: hidden">
 
 	<noscript>
 	  <h1 style="padding:25px; border: 1px solid red;">
@@ -186,7 +186,7 @@
 				</div>
 			</div>
 
-			<div class="good-item" data-aos="fade-left" style="z-index: 998">
+			<div class="good-item" data-aos="fade-left" style="z-index: 998;">
 				<img src="{{ asset('pictures/FOR_CATEGORIES_MAIN/creams_edited.png') }}" alt="creams">
 				<div class="outer-category-container">
 					<div class="category-name">
@@ -200,11 +200,11 @@
 				</div>
 			</div>
 
-			<div class="good-item" data-aos="fade-left" style="z-index: 997">
+			<div class="good-item" data-aos="fade-left" style="z-index: 997;">
 				<img src="{{ asset('pictures/FOR_CATEGORIES_MAIN/for_face_edited.png') }}" alt="for_face">
 				<div class="outer-category-container">
 					<div class="category-name">
-						<p>Догляд за обличчям<a href="{{ url('/products?product_category=Для%20обличчя') }}"></a></p>
+						<p>Догляд за обличчям<a href="{{ url('/products?product_category=Догляд%20за%обличчям') }}"></a></p>
 					</div>
 				</div>
 			</div>
@@ -469,6 +469,7 @@
 	<script>
 	  AOS.init({
 	  	duration: 1200,
+	  	disable: "mobile",
 	  });
 	</script>
 </body>

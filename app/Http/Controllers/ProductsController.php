@@ -32,7 +32,7 @@ class ProductsController extends Controller
         {
           $products = Product::select("*")
           ->where('product_status',  1)
-          ->where('product_category', $request->product_category)
+          ->where('product_category','LIKE','%'.$request->product_category.'%')
           ->get();
           return view('products', ['products' => $products, 'category' => $request->product_category]);
         }
@@ -51,7 +51,7 @@ class ProductsController extends Controller
      public function getProducts(Request $request)
      {
         if ($request->ajax()) {
-            $products = Product::orderBy('product_status', 'desc')->get();
+            $products = Product::orderBy('product_status', 'desc')->orderBy('updated_at', 'desc')->get();
             return Datatables::of($products)
                 ->addIndexColumn()
                 ->addColumn('product_description', function($products){
@@ -186,7 +186,10 @@ class ProductsController extends Controller
             }
 
             $product->product_status = $request->product_status;
-            $product->product_category = $request->product_category;
+
+            $product->product_category = $request->input('product_category');
+            $product->product_category = implode(',', $product->product_category);
+
             $product->title = $request->title;
             $product->metaDescription = $request->metaDescription;
             $product->metaKeywords = $request->metaKeywords;
@@ -224,7 +227,7 @@ class ProductsController extends Controller
                       return $query->where('product_price', '<', $data->maxPrice);
                       })
                       ->when(!empty($data->category) , function ($query) use($data){
-                      return $query->where('product_category', $data->category);
+                      return $query->where('product_category','LIKE','%'.$data->category.'%');
                       })
                       ->where('product_status',  1)
                       ->get();

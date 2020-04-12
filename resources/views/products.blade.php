@@ -90,7 +90,9 @@
 				          <img src="{{ url('/images/products/'.$product->product_image) }}" alt="image" onerror="altImage(this)">
 								  <div class="products-description">
 								     <h2>{!! $product->product_name !!}</h2>
-								     <p>{!! $product->product_price !!} грн</p>
+										 @if ($product->product_price ?? '')
+								     	<p>{!! $product->product_price !!} грн</p>
+										 @endif
 								     <a href=" {{ url('/details/'.$product->product_id) }}"><button class="btn" id="product-details">Деталі</button></a>
 								  </div>
 							  </div>

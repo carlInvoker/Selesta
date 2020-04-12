@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="{{ asset('pictures/phone/Logos/Selesta1.png') }}">
 
     <style>
         #logo {

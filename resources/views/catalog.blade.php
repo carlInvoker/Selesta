@@ -43,7 +43,7 @@
 			<div class="catalog-section">
 				<h2>Інше</h2>
 				<ul>
-					<li><a href="{{ url('/products?product_category=Для%20обличчя') }}">Для обличчя</a> </li>
+					<li><a href="{{ url('/products?product_category=Догляд%20за%обличчям') }}">Догляд за обличчям</a> </li>
 					<li><a href="{{ url('/products?product_category=Антивікові%20засоби') }}">Антивікові засоби</a> </li>
 					<li><a href="{{ url('/products?product_category=Антицелюлітні%20засоби') }}">Антицелюлітні засоби </a> </li>
 					<li><a href="{{ url('/products?product_category=Засоби%20проти%20проти') }}">Засоби проти лупи  </a> </li>

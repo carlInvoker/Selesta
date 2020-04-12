@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="{{ asset('css/stylesMain.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/modal.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/mediaMain.css') }}">
-
+	<link rel="icon" type="image/ico" href="{{ asset('pictures/phone/Logos/Selesta1.png') }}">
 
 	<style>
 		h1 {

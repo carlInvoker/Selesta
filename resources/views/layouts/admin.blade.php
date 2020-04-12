@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/docs/4.1/assets/img/favicons/favicon.ico">
+
 
     <title>Selesta Admin</title>
 
@@ -19,6 +19,8 @@
     <link href="{{ asset('css/admin/additional.css') }}" rel="stylesheet">
     <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
     <link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="{{ asset('pictures/phone/Logos/Selesta1.png') }}">
+
     <style>
 
       #DataTables_Table_0_filterWrapper {
